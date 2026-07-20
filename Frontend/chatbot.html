@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Parash GPT</title>
+    <link rel="stylesheet" href="chatbot.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="app-header">
+        <div class="brand">
+          <span class="brand-icon">P</span>
+          <div>
+            <h1>Parash GPT</h1>
+            <p>Your AI assistant built by Parash.</p>
+          </div>
+        </div>
+      </header>
+
+      <main class="app-content">
+        <section class="chat-window">
+          <div id="chat_box" class="chat-box" aria-live="polite"></div>
+          <form id="chat_form" class="chat-form">
+            <input
+              id="chat_input"
+              type="text"
+              placeholder="Send a message to Parash GPT..."
+              autocomplete="off"
+            />
+            <button id="btn" type="submit" disabled>Send</button>
+          </form>
+        </section>
+      </main>
+    </div>
+    <script src="chatbot.js" defer></script>
+  </body>
+</html>
